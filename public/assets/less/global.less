@@ -1,0 +1,116 @@
+.wl-hide{
+    display: none;
+}
+
+.wl-show{
+    display: block;
+}
+
+.wl-gdpr-compliance-bar {
+    width: 100vw;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    transition: 1s ease-in-out;
+    z-index: 1000;
+
+    &__container{
+        width: 100%;
+        max-width: 410px;
+        margin: 0 auto;
+        padding: 30px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+
+        @media (min-width: 540px) {
+            max-width: 500px;
+        }
+        
+        @media (min-width: 600px) {
+            max-width: 540px;
+        }
+        
+        @media (min-width: 768px) {
+            max-width: 700px;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        
+        @media (min-width: 1200px) {
+            max-width: 940px;
+        }
+
+        &__content{
+            font-size: 14px;
+            line-height: 1.2;
+            max-width: 100%;
+
+            @media (min-width: 540px) {
+                font-size: 16px;
+            }
+            @media (min-width: 768px) {
+                max-width: 80%;
+                padding-right: 20px;
+            }
+        }   
+        &__button{
+            font-size: 12px !important;
+            display: block;
+            
+            @media (min-width: 540px) {
+                font-size: 14px !important;
+            }
+        }     
+    }
+}
+
+.wl-position{
+    &-top{
+        top: 0;
+    }
+    &-bottom{
+        bottom: 0;
+    }
+}
+
+.wl-color{
+    &-ocean{
+        .ocean-theme;
+    }
+    &-light{
+        .light-theme;
+    }
+    &-forest{
+        .forest-theme;
+    }
+} 
+
+.wl-border{
+    &-top{
+        &-ocean{
+            border-bottom: 5px solid @boder-color-ocean;
+        }
+        &-light{
+            border-bottom: 5px solid @boder-color-light;
+        }
+        &-forest{
+            border-bottom: 5px solid @boder-color-forest;
+        }
+    }
+    &-bottom{
+        &-ocean{
+            border-top: 5px solid @boder-color-ocean;
+        }
+        &-light{
+            border-top: 5px solid @boder-color-light;
+        }
+        &-forest{
+            border-top: 5px solid @boder-color-forest;
+        }
+    }
+} 

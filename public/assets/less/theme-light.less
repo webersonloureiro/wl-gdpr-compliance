@@ -1,0 +1,19 @@
+@bg-color-light: #fbfbff;
+@color-light: #0b4f6c;
+@btn-color-light: #01baef;
+@boder-color-light: #01baef;
+
+.light-theme{
+    background-color: @bg-color-light;
+    color: @color-light;
+    a{
+        color: @btn-color-light;
+        &:hover{
+            color: darken(@btn-color-light, 10%);
+        }
+    }
+    .wl-gdpr-compliance-bar__container__button{
+        background-color: @btn-color-light;
+        color: #ffffff;
+    }
+}

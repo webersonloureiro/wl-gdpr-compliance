@@ -1,0 +1,19 @@
+@bg-color-ocean: #3185fc;
+@color-ocean: #0b4f6c;
+@btn-color-ocean: #403f4c;
+@boder-color-ocean: #403f4c;
+
+.ocean-theme{
+    background-color: @bg-color-ocean;
+    color: @color-ocean;
+    a{
+        color: @btn-color-ocean;
+        &:hover{
+            color: darken(@btn-color-ocean, 10%);
+        }
+    }
+    .wl-gdpr-compliance-bar__container__button{
+        background-color: @btn-color-ocean;
+        color: #ffffff;
+    }
+}
